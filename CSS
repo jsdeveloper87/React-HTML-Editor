@@ -1,41 +1,55 @@
+$fonts: arial, verdana;
+$border: 1px solid black;
+$width1: 680px;
+$width2: 650px;
+$bold: bold;
+$padding-left: 10px;
+$mixed-color1: black + blue;
+$mixed-color2: red + brown;
+$mixed-color3: green + blue;
+$mixed-color4: black + purple + blue;
+
 body {
-  background-color: gray;
+  background: url("https://videohive.img.customer.envatousercontent.com/files/167788677/590300.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=f146340b18eda168e6e4aac1961fc64c");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: $fonts;
 }
 
 #editor-title {
   margin-left: 10px;
-  border: 1px solid black;
-  width: 680px;
+  border: $border;
+  width: $width1;
   margin-top: 50px;
-  font-weight: bold;
-  padding-left: 10px;
+  font-weight: $bold;
+  padding-left: $padding-left;
   background-color: #4BA4A0;
-  height: 25px;
+  height: 25px;  
 }
+
+ #fire-img {
+  height: 15px;
+  width: 20px;
+  margin-top: -4px;
+ }
 
 #editor {
   margin-left: 10px;
   margin-top: -9px;
-  width: 680px;
+  width: $width1;
   height: 500px;
-  border: 1px solid black;
+  border: $border;
   background-color: black;
   color: lightgreen;
 }
 
-#fire-img {
-  height: 15px;
-  width: 20px;
-  margin-top: -4px;
-}
-
 #preview-title {
   margin-left: 700px;
-  border: 1px solid black;
-  width: 650px;
+  border: $border;
+  width: $width2;
   margin-top: -530px;
-  font-weight: bold;
-  padding-left: 10px;
+  font-weight: $bold;
+  padding-left: $padding-left;
   background-color: pink;
   height: 25px;
 }
@@ -43,9 +57,21 @@ body {
 #preview {
   margin-left: 700px;
   margin-top: -9px;
-  width: 650px;
+  width: $width2;
   height: 500px;
-  border: 1px solid black;
-  background-color: white;
+  border: $border;
+  background-color: azure;
+  h1 {
+    color: $mixed-color1;
+  }
+  h3 {
+    color: $mixed-color2;
+  }
+  p {
+    color: $mixed-color3;
+  }
+  li {
+    color: $mixed-color4;
+  }
 }
    
